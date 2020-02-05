@@ -1,6 +1,6 @@
 from flask import Flask
-from asmanity.core import app
-import asmanity.views
+from src.core import app
+import src.views
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=5000, debug=True)

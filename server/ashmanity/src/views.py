@@ -1,7 +1,9 @@
-from flask import Flask
+from flask import Flask, jsonify
+from random import randint
 from .core import app
 
 
 @app.route("/")
 def main_page():
-    return "hello, view!"
+    data = {"number": randint(1, 100)}
+    return jsonify(data)

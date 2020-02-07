@@ -2,6 +2,7 @@
     <div class="main">
         <header-component></header-component>
         <messageList-component></messageList-component>
+        <userList-component></userList-component>
     </div>
 </template>
 

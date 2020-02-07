@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="messageList">
         <messageItem-component v-for="(message, i) in message" :key="message.id" :message="message" :id="i+1"></messageItem-component>
     </div>
 </template>
@@ -19,6 +19,11 @@
                     firstName: "Artem",
                     lastName: "Avanesyan",
                     message: "Hi"
+                },{
+                    id: 3,
+                    firstName: "Albert",
+                    lastName: "Dargin",
+                    message: "How are u"
                 }]
             }
         }
@@ -26,5 +31,7 @@
 </script>
 
 <style scoped>
-
+    .messageList {
+        border-bottom:2px solid darkorange;
+    }
 </style>

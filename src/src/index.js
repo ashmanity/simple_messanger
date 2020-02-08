@@ -1,9 +1,8 @@
 import './js/com'
 import './css/main.css'
 import './scss/main.scss'
-
-
 window.Vue = require('vue');
+import store from "./store/store";
 
 //Components
 Vue.component('main-component',require('./components/main.vue').default);
@@ -15,5 +14,6 @@ Vue.component('userList-component',require('./components/userList.vue').default)
 
 
 const app = new Vue({
-   el: '#app',
+   store,
+   el: '#app'
 });

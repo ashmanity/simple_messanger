@@ -58,7 +58,10 @@ npm install html-webpack-plugin --save-dev
 ```
 npm i vue --save npm i vue-loader vue-style-loader vue-template-compiler --save-dev
 ```
-
+Установка `Vuex`:
+```
+npm i vuex --save 
+```
 ### Полезные ссылки
 - Для работы с Flask: https://flask.palletsprojects.com/en/1.1.x/
 - Для работы с Vue.js: https://vuejs.org/

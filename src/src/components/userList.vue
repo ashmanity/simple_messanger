@@ -29,6 +29,18 @@
                     email: "fff@fff.ff"
                 }]
             }
+        },
+        methods: {
+            addUser(firstName, lastName, age, email) {
+                let id = this.users[this.users.length-1].id + 1;
+                this.users.push({
+                    id,
+                    firstName,
+                    lastName,
+                    age,
+                    email
+                })
+            }
         }
     }
 </script>

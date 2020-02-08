@@ -11,6 +11,8 @@ Vue.component('messageItem-component',require('./components/messageItem.vue').de
 Vue.component('header-component',require('./components/header.vue').default);
 Vue.component('userItem-component',require('./components/userItem.vue').default);
 Vue.component('userList-component',require('./components/userList.vue').default);
+Vue.component('userAdd-component',require('./components/userAdd.vue').default);
+
 
 
 const app = new Vue({

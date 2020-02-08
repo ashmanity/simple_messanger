@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <h1>Ashmanity</h1>
+        <slot></slot>
     </div>
 </template>
 

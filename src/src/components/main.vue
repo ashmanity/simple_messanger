@@ -1,8 +1,13 @@
 <template>
     <div class="main">
-        <header-component></header-component>
+        <header-component>
+            <h1>Ashmanity</h1>
+        </header-component>
         <messageList-component></messageList-component>
-        <userList-component></userList-component>
+        <div class="container">
+            <userList-component></userList-component>
+            <userAdd-component></userAdd-component>
+        </div>
     </div>
 </template>
 
@@ -20,5 +25,8 @@
         border: 3px solid darkorange;
         height: 715px;
         border-radius: 10px;
+    }
+    .container {
+        display: inline-flex;
     }
 </style>

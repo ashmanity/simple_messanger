@@ -27,7 +27,6 @@
 
 <style scoped>
     .card {
-        width: 50%;
         border:3px solid coral;
         border-radius: 10px;
         margin: 10px;

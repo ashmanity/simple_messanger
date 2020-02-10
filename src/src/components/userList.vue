@@ -5,42 +5,12 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
     export default {
         name: "userList",
-        data () {
-            return {
-                users: [{
-                    id:1,
-                    firstName: "David",
-                    lastName: "Irden",
-                    age: "19",
-                    email: "fff@fff.ff"
-                },{
-                    id:2,
-                    firstName: "Stat",
-                    lastName: "Pieha",
-                    age: "12",
-                    email: "fff@fff.ff"
-                },{
-                    id:3,
-                    firstName: "Stat",
-                    lastName: "Pieha",
-                    age: "12",
-                    email: "fff@fff.ff"
-                }]
-            }
-        },
-        methods: {
-            addUser(firstName, lastName, age, email) {
-                let id = this.users[this.users.length-1].id + 1;
-                this.users.push({
-                    id,
-                    firstName,
-                    lastName,
-                    age,
-                    email
-                })
-            }
+        computed: mapGetters(['allUsers']),
+        async mounted() {
+            this.$stored.dispatch('fetchUsers')
         }
     }
 </script>

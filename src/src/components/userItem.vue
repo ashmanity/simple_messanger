@@ -2,8 +2,12 @@
     <div class="card">
         <div class="card-body">
             <p class="cardId">#{{ users.id }}</p>
-            <div class="card-title">{{ users.firstName }} {{  users.lastName  }}</div>
-            <div class="card-info">age: {{ users.age }}, email: {{ users.email }}</div>
+            <div class="card-title">{{ users.name }}</div>
+            <div class="card-info">
+                email: {{ users.email }}
+                address: {{ users.street }} {{ users.suite }}
+                phone: {{ users.phone }}
+            </div>
         </div>
         <div class="function">
             <button class="btn btn-red"><a href="#">Delete</a> </button>

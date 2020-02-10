@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
     export default {
         name: "userAdd",
         data() {
@@ -33,7 +32,7 @@
         },
         methods: {
             addUser() {
-                userList.users.addUser(this.users.firstName, this.users.lastName, this.users.age, this.users.email)
+                (this.users.firstName, this.users.lastName, this.users.age, this.users.email)
             }
         }
     }

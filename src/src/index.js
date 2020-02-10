@@ -1,8 +1,10 @@
 import './js/com'
 import './css/main.css'
 import './scss/main.scss'
+import VueRouter from "vue-router";
+
 window.Vue = require('vue');
-import store from "./store/store";
+Vue.use(VueRouter);
 
 //Components
 Vue.component('main-component',require('./components/main.vue').default);
@@ -12,10 +14,21 @@ Vue.component('header-component',require('./components/header.vue').default);
 Vue.component('userItem-component',require('./components/userItem.vue').default);
 Vue.component('userList-component',require('./components/userList.vue').default);
 Vue.component('userAdd-component',require('./components/userAdd.vue').default);
+Vue.component('admin-component',require('./components/Admin.vue').default);
+
+const Home = require("./components/main.vue");
+const Admin = require("./components/Admin.vue");
 
 
+var router = new VueRouter({
+   routes: [
+      {path:'/home', component: Home},
+      {path: '/admin', component: Admin}
+
+   ]
+});
 
 const app = new Vue({
-   store,
-   el: '#app'
+   el: '#app',
+   router
 });

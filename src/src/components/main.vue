@@ -1,13 +1,12 @@
 <template>
     <div class="main">
-        <header-component>
-            <h1>Ashmanity</h1>
-        </header-component>
+        <header-component></header-component>
         <messageList-component></messageList-component>
         <div class="container">
             <userList-component></userList-component>
             <userAdd-component></userAdd-component>
         </div>
+        <router-view></router-view>
     </div>
 </template>
 

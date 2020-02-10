@@ -4,8 +4,8 @@
             <p class="cardId">#{{ users.id }}</p>
             <div class="card-title">{{ users.name }}</div>
             <div class="card-info">
+                age: {{ users.age }}
                 email: {{ users.email }}
-                address: {{ users.street }} {{ users.suite }}
                 phone: {{ users.phone }}
             </div>
         </div>

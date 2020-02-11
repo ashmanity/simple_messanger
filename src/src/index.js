@@ -2,6 +2,7 @@ import './js/com'
 import './css/main.css'
 import './scss/main.scss'
 import VueRouter from "vue-router";
+import store from "./store/store";
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
@@ -30,5 +31,6 @@ var router = new VueRouter({
 
 const app = new Vue({
    el: '#app',
-   router
+   router,
+   store
 });

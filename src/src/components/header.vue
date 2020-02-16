@@ -1,6 +1,19 @@
 <template>
     <div class="header">
-        <slot></slot>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <nav>
+                <lu>
+                    <li>Home</li>
+                    <li>Friends</li>
+                    <li>Login</li>
+                    <li>Registration</li>
+                </lu>
+            </nav>
+        </div>
+
     </div>
 </template>
 
@@ -12,9 +25,18 @@
 </script>
 
 <style scoped>
-    .header {
-        margin: 10px;
-        padding: 10px;
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+    nav{
+        display: flex;
+    }
+    lu{
+        display: flex;
+
     }
     h1 {
         text-align: center;

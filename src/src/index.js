@@ -6,6 +6,7 @@ import store from "./store/store";
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
+const axios = require('axios').default;
 
 //Components
 Vue.component('main-component',require('./components/main.vue').default);
@@ -32,5 +33,6 @@ var router = new VueRouter({
 const app = new Vue({
    el: '#app',
    router,
+   axios,
    store
 });

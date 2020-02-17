@@ -32,7 +32,13 @@
         },
         methods: {
             addUser() {
-                (this.users.firstName, this.users.lastName, this.users.age, this.users.email)
+                let user = {
+                    firstName: this.users.firstName,
+                    lastName: this.users.lastName,
+                    age: this.users.age,
+                    email: this.users.email
+                };
+                this.$store.commit("setUser", user)
             }
         }
     }

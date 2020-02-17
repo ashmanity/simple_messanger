@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <header-component></header-component>
+<!--        <header-component></header-component>-->
         <messageList-component></messageList-component>
         <div class="container">
             <userList-component></userList-component>
@@ -12,7 +12,12 @@
 
 <script>
     export default {
-        name: "main"
+        name: "main",
+        data () {
+            return {
+                number
+            }
+        },
     }
 </script>
 

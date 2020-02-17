@@ -26,10 +26,26 @@ export default {
             phone: "8896934592"
         }]
     },
-    mutations:{},
-    actions:{},
+    mutations:{
+        setUser: (state,payload) => {
+            state.users = payload
+        },
+        addUSer: (state, payload) => {
+            state.users.push(payload)
+        }
+    },
+    actions:{
+        getUser: async (context, payload) => {
+            let { data } = await Axios.get("URL");
+            context.commit(setUser,data)
+        },
+        saveUser: async (context, payload) => {
+            let { data } = await Axios.post('URL');
+            context.commit('ADD_TODO',payload)
+        }
+    },
     getters:{
-        getUsers:  function (state) {
+        getUsers: state => {
             return state.users
         }
     }

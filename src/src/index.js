@@ -2,10 +2,14 @@ import './js/com'
 import './css/main.css'
 import './scss/main.scss'
 import VueRouter from "vue-router";
+import VueMeta from "vue-meta"
 import store from "./store/store";
 
 window.Vue = require('vue');
 Vue.use(VueRouter);
+Vue.use(VueMeta,{
+   refreshOnceOnNavigation: true
+});
 const axios = require('axios').default;
 
 //Components

@@ -13,6 +13,9 @@
 <script>
     export default {
         name: "main",
+        metaInfo: {
+            title: 'Mes'
+        },
         data () {
             return {
                 number
